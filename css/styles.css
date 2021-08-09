@@ -1,0 +1,384 @@
+body {
+  overflow-x: hidden;
+}
+
+.light-brown {
+  color: #cba57d;
+}
+.red {
+  background-color: #cf3331;
+}
+
+header,
+#toggleMenu,
+.hero-banner img,
+.text-content,
+.hero-banner .btn,
+.shadow-bottom {
+  position: absolute;
+}
+
+header {
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+}
+
+.logo img {
+  width: 170px;
+}
+
+#toggleMenu {
+  right: 0;
+}
+
+ul {
+  font-size: 12px;
+}
+ul li {
+  padding: 0 1rem;
+}
+li.active {
+  font-weight: bold;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero-banner,
+.hero-banner .btn {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.hero-banner {
+  background: #000 url("../assets/hero/hero-bg.jpg") no-repeat center center
+    fixed;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+img.smoke {
+  max-width: 300%;
+  opacity: 0;
+  animation: 50s linear 1.5s infinite running smoke;
+}
+
+.text-content {
+  top: 0;
+  margin-top: 7rem;
+  z-index: 1;
+}
+
+.fighters-headline h1 {
+  font-size: 400%;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.vs {
+  transform: rotate(270deg);
+  font-size: 1.5rem;
+  background: rgb(201, 165, 129);
+  background: linear-gradient(
+    90deg,
+    rgba(201, 165, 129, 1) 0%,
+    rgba(243, 222, 192, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.location-slogan h2,
+.location-slogan div {
+  font-size: 2rem;
+  background: rgb(201, 165, 129);
+  background: linear-gradient(
+    90deg,
+    rgba(201, 165, 129, 1) 0%,
+    rgba(243, 222, 192, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.location-slogan > div {
+  font-size: 10px;
+  text-align: center;
+  line-height: 1;
+  height: 30px;
+  letter-spacing: 3px;
+  color: #9c8d70;
+  font-weight: 700;
+}
+
+h4.category {
+  font-size: 0.8rem;
+  color: #be9c7d;
+}
+
+.date-location-details h3 {
+  font-size: 0.9rem;
+}
+
+.fighter-bg1 {
+  left: 0;
+}
+
+.fighter-bg2 {
+  right: 0;
+}
+
+.hero-banner .btn {
+  border-radius: inherit;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 1.05rem;
+  bottom: 10.5rem;
+  z-index: 1;
+  left: 41%;
+}
+
+.bg-shadow,
+.fighter-bg1,
+.fighter-bg2,
+.fighters-img img {
+  bottom: 0;
+}
+
+.bg-shadow {
+  width: 100vw;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 400px) {
+  .text-content {
+    margin-top: 7rem;
+  }
+  .fighters-headline h1 {
+    font-size: 330%;
+  }
+  h4.category,
+  .date-location-details h3 {
+    font-size: 0.7rem;
+  }
+  .hero-banner .btn {
+    font-size: 0.8rem;
+    bottom: 8rem;
+    z-index: 1;
+    left: 40%;
+  }
+}
+
+@media only screen and (min-width: 568px) {
+  .logo img {
+    width: 100px;
+  }
+  .fighter-bg1,
+  .fighter-bg2 {
+    width: 55%;
+  }
+
+  .text-content {
+    margin-top: 2rem;
+  }
+  .fighters-headline h1 {
+    font-size: 2.5rem;
+  }
+  .location-slogan h2 {
+    font-size: 1.35rem;
+  }
+  .location-slogan > div {
+    height: auto;
+    font-size: 12px;
+  }
+  .date-location-details h3 {
+    font-size: 0.8rem;
+  }
+  .hero-banner .btn {
+    left: 46%;
+    bottom: 9rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .logo img {
+    width: 125px;
+  }
+  .text-content {
+    top: 35%;
+    transform: translateY(-50%);
+    margin-top: 0;
+  }
+
+  .fighter-bg1,
+  .fighter-bg2,
+  .fighters-img img {
+    width: 45%;
+  }
+
+  .fighters-img img {
+    width: 43%;
+  }
+  .fighter1 {
+    left: 13%;
+    animation: leftFighter 0.8s linear 2s;
+    transform: translateX(-150px);
+    animation-fill-mode: forwards;
+  }
+  .fighter2 {
+    right: 13%;
+    animation: rightFighter 0.8s linear 2s;
+    transform: translateX(150px);
+    animation-fill-mode: forwards;
+  }
+  img.smoke {
+    max-width: 100%;
+    left: 0;
+    top: auto;
+    bottom: 0;
+  }
+
+  .fighters-headline h1 {
+    font-size: 6rem;
+  }
+  .location-slogan h2 {
+    font-size: 3.5rem;
+    line-height: 0.8;
+  }
+  h4.category,
+  .date-location-details h3 {
+    font-size: 12px;
+  }
+  .hero-banner .btn {
+    bottom: 18rem;
+    font-size: 14px;
+  }
+
+  @keyframes leftFighter {
+    0% {
+      transform: translateX(-150px);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes rightFighter {
+    0% {
+      transform: translateX(150px);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .fighters-img {
+    visibility: hidden;
+  }
+  .fighters-img.animate__animated {
+    visibility: visible;
+  }
+  .fighters-img img {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .fighter-bg1 {
+    animation: leftFighterBg 0.3s linear 2s;
+    transform: translateX(-75px);
+    animation-fill-mode: forwards;
+  }
+  .fighter-bg2 {
+    animation: rightFighterBg 0.3s linear 2s;
+    transform: translateX(75px);
+    animation-fill-mode: forwards;
+  }
+  #menuItems {
+    position: fixed;
+    right: 0;
+    transform: translateX(300px);
+    transition: transform 1s ease-in;
+    width: 230px;
+    height: 100vh;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.25rem;
+  }
+
+  #menuItems.open {
+    transform: translateX(0);
+  }
+
+  #close {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  #overlay {
+    opacity: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 2;
+    transition: opacity 1s ease-out;
+  }
+  #overlay.open {
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 568px) and (max-width: 992px) and (orientation: landscape) {
+  .fighter-bg1,
+  .fighter-bg2 {
+    top: 2rem;
+  }
+
+  .hero-banner .btn {
+    bottom: 4rem;
+  }
+}
+
+@keyframes smoke {
+  0%,
+  100% {
+    transform: translateX(25%);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes leftFighterBg {
+  0% {
+    transform: translateX(-75px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes rightFighterBg {
+  0% {
+    transform: translateX(75px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}

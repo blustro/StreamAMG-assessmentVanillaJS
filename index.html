@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StreamAMG Assessment</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/dlm3sbo.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <div class="container-fluid px-0" style="min-height: 10000px">
+      <header class="d-flex justify-content-between px-0 px-lg-5">
+        <a href="" class="logo p-3"><img src="assets/logo.svg" alt="" /></a>
+        <button class="menu d-block d-lg-none m-2 btn" id="toggleMenu">
+          <svg viewBox="0 0 100 80" width="40" height="40">
+            <rect width="100" height="10" fill="#ffffff"></rect>
+            <rect y="30" width="100" height="10" fill="#ffffff"></rect>
+            <rect y="60" width="100" height="10" fill="#ffffff"></rect>
+          </svg>
+        </button>
+
+        <ul
+          class="d-md-flex text-white list-unstyled tk-nimbus-sans p-3"
+          id="menuItems"
+        >
+          <button
+            id="close"
+            class="d-block d-lg-none btn btn-lg text-white tk-nimbus-sans"
+          >
+            X
+          </button>
+          <li class="active"><a href="#">HOME</a></li>
+          <li><a href="#">BUY PASS</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">LOGIN</a></li>
+          <li><a href="#">REGISTER</a></li>
+        </ul>
+      </header>
+
+      <div class="hero-banner d-flex align-items-center justify-content-center">
+        <img src="assets/hero/smoke1.png" class="img-fluid smoke" alt="" />
+        <img src="assets/hero/smoke2.png" class="img-fluid smoke" alt="" />
+
+        <div
+          class="
+            text-content
+            animate__animated animate__fadeIn animate__delay-2s
+          "
+        >
+          <div
+            class="
+              fighters-headline
+              d-flex
+              justify-content-center
+              align-items-center
+              tk-nimbus-sans-condensed
+            "
+          >
+            <h1 class="mb-0">Ruiz</h1>
+            <span class="vs light-brown">VS</span>
+            <h1 class="mb-0">Joshua <span class="light-brown">2</span></h1>
+          </div>
+
+          <div
+            class="
+              location-slogan
+              d-flex
+              align-items-center
+              justify-content-center
+              tk-nimbus-sans-extended
+            "
+          >
+            <h2 class="mb-0">Clash</h2>
+            <div class="d-flex flex-column tk-nimbus-sans mx-1">
+              <span>On</span>
+              <span>The</span>
+            </div>
+            <h2 class="mb-0">Dunes</h2>
+          </div>
+
+          <h4 class="category tk-nimbus-sans-extended text-center my-3">
+            Heavyweight Championship of the world
+          </h4>
+
+          <div
+            class="
+              date-location-details
+              d-flex
+              flex-column
+              justify-content-center
+              align-items-center
+              tk-nimbus-sans-extended
+            "
+          >
+            <h3 class="mb-1">Saturday, December 07 2019 - 10PM</h3>
+            <h3>Diriyah, Saudi Arabia</h3>
+          </div>
+        </div>
+
+        <button
+          class="
+            btn
+            red
+            d-flex
+            m-auto
+            tk-nimbus-sans-condensed
+            p-3 p-sm-2
+            animate__animated animate__fadeIn animate__delay-2s
+          "
+        >
+          Buy Pass
+        </button>
+
+        <div class="animate__animated animate__fadeIn animate__delay-1s">
+          <img
+            src="assets/hero/fighter-bg1.png"
+            class="img-fluid fighter-bg1"
+            alt=""
+          />
+          <img
+            src="assets/hero/fighter-bg2.png"
+            class="img-fluid fighter-bg2"
+            alt=""
+          />
+        </div>
+
+        <div
+          class="
+            d-none d-lg-flex
+            fighters-img
+            animate__animated animate__fadeIn animate__delay-1s
+          "
+        >
+          <img
+            src="assets/hero/fighter1.png"
+            class="img-fluid fighter1"
+            id="hori"
+            alt=""
+          />
+          <img
+            src="assets/hero/fighter2.png"
+            class="img-fluid fighter2"
+            id="hori2"
+            alt=""
+          />
+        </div>
+
+        <img
+          src="assets/hero/shadow-bottom.png"
+          alt=""
+          class="bg-shadow animate__animated animate__fadeIn animate__delay-1s"
+        />
+      </div>
+    </div>
+  </body>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
+</html>
